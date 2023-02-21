@@ -1,57 +1,61 @@
-.container{
+.container {
     width: 90%;
     background-color: #eaec5e;
     margin: auto;
     box-sizing: border-box;
     display: grid;
-    /* grid-template: repeat(2,50px) / repeat(2,1fr); */
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template: row= repeat(2,50px) / columns = repeat(2,1fr); */
+    grid-template-columns: repeat(12,1fr);
     grid-template-rows: 40px 200px 40px;
     grid-gap: 3px;
     text-transform: capitalize;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* row = height,columns = width */
 }
-.inner-div{
-    background-color: aqua;
-    width: 100%;
 
-text-align: center;
-padding-top: 0.2rem;
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.inner-div2{
-    width: 100%;
-  
-    text-align: center;
+.inner-div {
     background-color: rgb(0, 17, 255);
+    width: 100%;
+    /* grid-column-start:1 ;
+grid-column-end:3 ; */
+    grid-column: 1/-1;
+    text-align: center;
     padding-top: 0.2rem;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.inner-div3{
+.inner-div2 {
     width: 100%;
-   
+
+    text-align: center;
+    background-color: aqua;
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div3 {
+    width: 100%;
+    grid-column: 2/-1;
     text-align: center;
     background-color: #14ca24;
     padding-top: 0.2rem;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.inner-div4{
+
+.inner-div4 {
     width: 100%;
-  
+    grid-column: 1/-1;
     text-align: center;
     background-color: #f31ccf;
     padding-top: 0.2rem;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
-
